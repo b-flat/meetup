@@ -1,0 +1,28 @@
+1. events from a specific group: url_name -> events_id
+Gets a listing of all Meetup Events hosted by a target group:
+https://secure.meetup.com/meetup_api/console/?path=/:urlname/events
+
+2. rsvps from a specific event: event_id, urlname -> member id & name
+Retrieves list of event RSVPs
+https://secure.meetup.com/meetup_api/console/?path=%2F%3Aurlname%2Fevents%2F%3Aevent_id%2Frsvps
+
+***
+- Aaron's meetup:
+- urlname: DE-ProD-SF
+- group_id: 18514297
+
+
+#get all the members from DE-ProD-SF
+
+# https://secure.meetup.com/meetup_api/console/?path=/2/members
+# and you’ll be able to get all the group info
+# and a list of all the members in the group
+# and one aspect of the member, is when they joined, 
+# so you can work out if they joined before or after the event
+
+# event description analysis: preprocessing - re, latent topic from event descriptions, 
+# tfidf + binary classifier
+
+# Wed:
+# get data done, fit a simple model (content based recommender,
+# tfidf + binary classifier - sentiment analysis one)
