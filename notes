@@ -6,12 +6,7 @@ https://secure.meetup.com/meetup_api/console/?path=/:urlname/events
 Retrieves list of event RSVPs
 https://secure.meetup.com/meetup_api/console/?path=%2F%3Aurlname%2Fevents%2F%3Aevent_id%2Frsvps
 
-***
-- Aaron's meetup:
-- urlname: DE-ProD-SF
-- group_id: 18514297
-
-
+3. 
 #get all the members from DE-ProD-SF
 
 # https://secure.meetup.com/meetup_api/console/?path=/2/members
@@ -20,9 +15,22 @@ https://secure.meetup.com/meetup_api/console/?path=%2F%3Aurlname%2Fevents%2F%3Ae
 # and one aspect of the member, is when they joined, 
 # so you can work out if they joined before or after the event
 
-# event description analysis: preprocessing - re, latent topic from event descriptions, 
+***
+meetups:
+- urlname: DF-ProD-SF
+- group_id: 18514297
+
+- urlname: DE-ProD-SF
+- group_id: 
+
+***
+to do: 
+how to bypass the 200 limit?
+
+(best practice: code/functions, save data to text file)
+
+# event description analysis: latent topic from event descriptions, 
 # tfidf + binary classifier
 
-# Wed:
 # get data done, fit a simple model (content based recommender,
 # tfidf + binary classifier - sentiment analysis one)
